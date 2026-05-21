@@ -22,13 +22,13 @@ export default function InOrderVisualizer() {
   const [steps, setSteps] = useState(0);
   const animationRef = useRef(null);
 
-  // Insert node into BST
+  // Insert node into BST (purely functional, no mutation)
   const insertNode = (node, value) => {
     if (!node) return new TreeNode(value);
     if (value < node.value) {
-      node.left = insertNode(node.left, value);
+      return { ...node, left: insertNode(node.left, value) };
     } else if (value > node.value) {
-      node.right = insertNode(node.right, value);
+      return { ...node, right: insertNode(node.right, value) };
     }
     return node;
   };
@@ -41,7 +41,7 @@ export default function InOrderVisualizer() {
     }
 
     setRoot(prev => {
-      const newRoot = insertNode(prev ? {...prev} : null, value);
+      const newRoot = insertNode(prev, value);
       setMessage(`Inserted ${value}`);
       return newRoot;
     });
