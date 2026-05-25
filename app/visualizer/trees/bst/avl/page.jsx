@@ -27,7 +27,7 @@ export default function AVLPage() {
         <div className="bg-slate-950 text-slate-100 font-sans p-6 rounded-3xl border border-slate-900 shadow-2xl flex flex-col gap-6 max-w-7xl mx-auto">
           <div className="bg-slate-900/60 backdrop-blur-xl border border-slate-800 p-5 rounded-2xl flex justify-between items-center shadow-lg">
             <div className="text-xs text-purple-400 font-semibold flex items-center gap-1.5 bg-purple-950/40 px-3 py-1.5 rounded-xl border border-purple-900/35">
-              <Sparkles className="w-4 h-4 animate-pulse" /> Active Visualizer under development for GSSoc '26!
+              <Sparkles className="w-4 h-4 animate-pulse" /> Active Visualizer under development for GSSoc &apos;26!
             </div>
           </div>
           <div className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-4">
