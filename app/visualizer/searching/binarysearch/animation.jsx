@@ -202,7 +202,7 @@ const BinarySearch = () => {
         }, delay * 0.6);
       }
     }, delay);
-  }, []); // stable — reads all live values via refs
+  }, [speedRef]); // stable — reads all live values via refs
 
   const handleGo = (e) => {
     e.preventDefault();
