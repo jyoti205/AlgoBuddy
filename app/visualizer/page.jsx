@@ -146,6 +146,7 @@ const sections = [
           { name: "Insertion Sort", path: "/visualizer/sorting/insertionsort" },
           { name: "Merge Sort", path: "/visualizer/sorting/mergesort" },
           { name: "Quick Sort", path: "/visualizer/sorting/quicksort" },
+          { name: "Counting Sort", path: "/visualizer/sorting/countingsort" },
         ],
       },
     ],
@@ -563,7 +564,7 @@ const sections = [
   },
   {
     title: "Graph",
-    desc: "BFS, DFS, Dijkstra, MST & topological sort",
+    desc: "BFS, DFS, shortest paths, MST & topological sort",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -618,6 +619,10 @@ const sections = [
           {
             name: "Dijkstra's Algorithm",
             path: "/visualizer/graph/dijkstra",
+          },
+          {
+            name: "Floyd-Warshall Algorithm",
+            path: "/visualizer/graph/floyd-warshall",
           },
           {
             name: "Prim's Algorithm",
