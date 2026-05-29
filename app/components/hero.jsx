@@ -107,13 +107,6 @@ const HeroSection = () => {
                 Start Visualizing
                 <ArrowRight className="w-4 h-4" />
               </Link>
-
-              <Link
-                href="/blogs"
-                className="inline-flex items-center gap-2 h-[52px] min-h-[44px] px-8 rounded-full border-2 border-surface-900 dark:border-surface-50 text-surface-900 dark:text-surface-50 text-[15px] font-bold hover:bg-surface-900 hover:text-white dark:hover:bg-white dark:hover:text-surface-900 transition-colors duration-200"
-              >
-                Read Blogs
-              </Link>
             </div>
           </div>
 
